@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td,th{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            caption-side: bottom;
+            <!-- background-color: brown;     -->
+        }
+    </style>
+</head>
+<body>
+    <table> 
+        <colgroup>
+            <!-- <col span="3" style="background-color:greenyellow"> -->
+            <col span="">   <!--if we dont want to color first column-->
+            <col span="" style="background-color:greenyellow">
+            <col span="" style="background-color:pink">
+            <!-- <col span="" style="visibility:collapse"> -->    <!--it hides the column-->
+        </colgroup>
+        <tr>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+        </tr>
+        <tr>
+            <td rowspan="4">Span Rows</td>
+            <td colspan="3">Span Columns</td>
+        </tr>
+        <tr>
+            <td colspan="2">abdsa</td>
+            <td rowspan="3">dsaf</td>
+        </tr>
+        <tr>
+            <td rowspan="2">skads</td>
+            <td>sdadsa</td>
+        </tr>
+        <tr>
+            <td>dqddq</td>
+        </tr>
+    </table>
+</body>
+</html>
