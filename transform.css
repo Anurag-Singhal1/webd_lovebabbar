@@ -1,0 +1,8 @@
+.box{
+    background-color: aqua;
+    transform: translate(10px,20px);
+    /* transform: rotate(-45deg); */
+    margin: 400px;
+    transform: scale(2,3);    /* scale means zoom (horizontal ,vertical) */
+    transform: skew(180deg);
+}

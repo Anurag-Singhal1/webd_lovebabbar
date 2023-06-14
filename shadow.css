@@ -1,5 +1,11 @@
 h1{
     text-shadow: 3px 3px 3px red;   /* (horizontal, vertical, to blur the shadow, color of shadow)*/
-    text-shadow: 3px 3px 3px red, 50px 50px 3px green;
-    
+    text-shadow: 3px 3px 3px red, 3px 3px 3px green; /* for multiple shadows we use comma*/
+}
+.box{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    box-shadow: -10px -10px 15px green, 15px 15px 15px yellow ;
+    color: red;   /* for font-color*/
 }
