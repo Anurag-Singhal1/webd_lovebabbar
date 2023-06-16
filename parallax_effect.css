@@ -47,3 +47,40 @@ section{
     color: white;
     padding: 5rem 0;
 }
+.secHeading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateX(-20%) ;
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.bg1{ 
+    background-image: url(images/sport-1.jpg);
+}
+.bg2{
+    background-image: url(images/sport-2.jpg);
+}
+.bg3{
+    background-image: url(images/sport-3.jpg);
+}
