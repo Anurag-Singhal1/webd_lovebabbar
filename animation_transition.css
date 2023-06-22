@@ -1,0 +1,33 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color:aquamarine;
+    border: 3px solid red;
+    display: flex;
+}
+.box{
+    border: 2px solid orange;
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+
+    /* transition: 1s; */
+    /* transition-property: background-color; */
+    /* transition-property: all; */
+    /* transition-delay: 2s; */
+
+    /* property name | duration | easing function | delay */
+    /* transition: transform 1s ease 1s; */
+    /* transition: transform 1s ease; */
+    /* transition: background-color 1s ease; */
+    /* transition: all 1s ease; */
+    /* transition: transform 2s ease-out ; */
+    transition: transform 2s cubic-bezier(0.85, 0.27, 0, 1.02) ;
+}
+.box:hover{
+    background-color: hotpink;
+    /* transform: rotate(45deg); */
+    /* transform: translateX(500px); */
+    transform: scale(1.4) translateX(500px) rotate(360deg);
+}
