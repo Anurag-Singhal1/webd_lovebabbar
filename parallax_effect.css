@@ -76,11 +76,11 @@ section{
     font-weight: 600;
 }
 .bg1{ 
-    background-image: url(images/sport-1.jpg);
+    background-image: url(parallax/sport-1.jpg);
 }
 .bg2{
-    background-image: url(images/sport-2.jpg);
+    background-image: url(parallax/sport-2.jpg);
 }
 .bg3{
-    background-image: url(images/sport-3.jpg);
+    background-image: url(parallax/sport-3.jpg);
 }
