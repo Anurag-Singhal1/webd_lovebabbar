@@ -13,22 +13,31 @@
 <body>
     <!-- wrapper -->
     <div class="w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-[#344151] gap-10">
-        <div class="text-[#0398d4] font-medium text-[40px]">Increment and Decrement</div>
+        <!-- heading -->
+        <div class="text-[#0398d4] font-medium text-[40px]">Increment And Decrement</div>
 
+        <!-- secondary wrapper -->
         <div class="bg-white flex text-[25px] text-[#344151] rounded-sm gap-12 p-3 px-5">
-            <button class="border-r-2 border-[#bfbfbf] pr-5">
+            <!-- negative button  -->
+            <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5">
                 <i class="fa-solid fa-square-minus"></i>
             </button>
 
-            <div class="font-bold ">
+            <!-- value to be increment or decrement  -->
+            <div id="counter" class="font-bold ">
                 0
             </div>
-
-            <button class="border-l-2 border-[#bfbfbf] pl-5">  
+   
+            <!-- positive button  -->
+            <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5">  
                 <i class="fa-solid fa-square-plus"></i>
             </button>
         </div>
     </div>
+
     <!-- <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script> -->
+
+    <script src="./counterApp.js"></script>
 </body>
 </html>
+
