@@ -19,18 +19,21 @@ let password = "";
 let passwordLength = 10;                                 // by default 
 let checkCount = 0; 
 handleSlider();
-// strength circle color to grey
+setIndicator('#ccc');                                    // setting strength indicator color 
 
 // set password length
 function handleSlider(){                           // iska kaam hai, UI mein password Length ki value dikhana
     inputSlider.value = passwordLength;
     lengthDisplay.innerText = passwordLength;
-    // or kuch bhi krna chahiye ??
+    // thumb ke aage ka color nhi chahiye na
+    const min = inputSlider.min;
+    const max = inputSlider.max;
+    inputSlider.style.backgroundSize = ((passwordLength-min)*100/(max-min)) + "% 100%"  // width and height 100
 }
 
 function setIndicator(color){
     indicator.style.backgroundColor = color;
-    // shadow banao iski
+    indicator.style.boxShadow = `0px 0px 18px 1px ${color}`;
 }
 
 function getRndInteger(min, max){

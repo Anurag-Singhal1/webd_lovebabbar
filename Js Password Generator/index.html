@@ -8,13 +8,13 @@
     <!-- adding favicon icon-->
     <link rel="shortcut icon" href="./fav1.png" type="image/x-icon">
 
-    <!-- font-awesome link for icons  -->
+    <!-- font-awesome link for icons  : we dont use it here, we use image -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- google fonts links : 3 links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=League+Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=League+Spartan:wght@400;700;800&display=swap" rel="stylesheet">
 
     <!--css file link  -->
     <link rel="stylesheet" href="./styles.css">
@@ -27,9 +27,10 @@
 
             <input readonly placeholder="Password" class="display" data-passwordDisplay > <!--custom attribute : data-passwordDisplay-->
 
-            <button data-copy>
-                <span data-copyMsg></span>
-                <i class="fa-solid fa-copy"></i>
+            <button class="copybtn" data-copy>
+                <span class="tooltip" data-copyMsg></span>
+                <!-- <i class="fa-solid fa-copy"></i> -->
+                <img src="./copy.svg" alt="copy" width="23" height="23">   
             </button>
         </div>
 
@@ -45,19 +46,19 @@
             <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider > 
 
             <!-- check boxes  -->
-            <div>
+            <div class="check">
                 <input type="checkbox" id="uppercase">
                 <label for="uppercase"> Includes Uppercase letters </label>
             </div>
-            <div>
+            <div class="check">
                 <input type="checkbox" id="lowercase">
                 <label for="lowercase"> Includes Lowercase letters </label>
             </div>
-            <div>
+            <div class="check">
                 <input type="checkbox" id="numbers">
                 <label for="numbers"> Includes Numbers </label>
             </div>
-            <div>
+            <div class="check">
                 <input type="checkbox" id="symbols">
                 <label for="symbols"> Includes Symbols </label>
             </div>
@@ -65,7 +66,7 @@
             <!-- strength section  -->
             <div class="strength-container">
                 <p>Strength</p>
-                <div data-indicator></div>
+                <div class="indicator" data-indicator></div>
             </div>
 
             <!-- generate password button  -->
